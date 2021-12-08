@@ -6,9 +6,4 @@
     {
         return _name;
     }
-
-    public void PrintTimeSheetReport()
-    {
-        Console.WriteLine("Printing a time sheet report...");
-    }
 }
