@@ -2,11 +2,12 @@
 {
     public class Project
     {
-        private IEnumerable<Document> _documents = new List<Document>();
+        private IEnumerable<Document> _allDocs = new List<Document>();
+        private IEnumerable<WritableDocument> _writableDocs = new List<WritableDocument>();
 
         public void OpenAll()
         {
-            foreach (var doc in _documents)
+            foreach (var doc in _allDocs)
             {
                 doc.Open();
             }
@@ -14,12 +15,9 @@
 
         public void SaveAll()
         {
-            foreach (var doc in _documents)
+            foreach (var doc in _writableDocs)
             {
-                if (doc.GetType() != typeof(ReadOnlyDocument))
-                {
-                    doc.Save();
-                }
+                doc.Save();
             }
         }
     }
