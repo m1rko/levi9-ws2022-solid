@@ -2,7 +2,12 @@
 {
     public class BudgetReport
     {
-        private MySqlDatabase _database = new MySqlDatabase();
+        private IDatabase _database;
+
+        public BudgetReport(IDatabase database)
+        {
+            _database = database;
+        }
 
         public void Open(DateTime date)
         {
