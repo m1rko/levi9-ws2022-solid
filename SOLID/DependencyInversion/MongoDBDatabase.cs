@@ -1,6 +1,6 @@
 ﻿namespace SOLID.DependencyInversion
 {
-    public class MySqlDatabase : IDatabase
+    public class MongoDBDatabase : IDatabase
     {
         public void Insert()
         {
