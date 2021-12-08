@@ -1,6 +1,6 @@
 ﻿namespace SOLID.InterfaceSegragation
 {
-    public class Dropbox : ICloudProvider
+    public class Dropbox : ICloudStorageProvider
     {
 
         public void StoreFile(string name)
@@ -12,20 +12,5 @@
         {
             //...
         }
-
-        //public void CreateServer(string region)
-        //{
-        //    //...
-        //}
-
-        //public IEnumerable<Servers> ListServers(string region)
-        //{
-        //    return new List<Servers>();
-        //}
-
-        //public string GetCdnAddress()
-        //{
-        //    return string.Empty;
-        //}
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SOLID.InterfaceSegragation
 {
-    public class Amazon : ICloudProvider
+    public class Amazon : ICloudHostingProvider, ICdnProvider, ICloudStorageProvider
     {
         public void StoreFile(string name)
         {
