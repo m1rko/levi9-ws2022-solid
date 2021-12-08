@@ -2,43 +2,33 @@
 {
     public class Order
     {
-        private string _shipping;
-        private IEnumerable<Item> _lineItems;
+        private IShipping _shipping;
+
+        public IEnumerable<Item> LineItems { get; set; }
 
         public decimal GetTotal()
         {
-            return _lineItems.Sum(i => i.Price);
+            return LineItems.Sum(i => i.Price);
         }
 
         public decimal GetTotalWeight()
         {
-            return _lineItems.Sum(i => i.Weight);
+            return LineItems.Sum(i => i.Weight);
         }
 
-        public void SetShippingType(string st)
+        public void SetShippingType(IShipping st)
         {
             _shipping = st;
         }
 
         public decimal GetShippingCost()
         {
-            if (_shipping == "ground")
-            {
-                if (GetTotal() > 100)
-                    return 0;
-
-                return Math.Max(10, GetTotalWeight() * 1.5m);
-            }
-
-            if (_shipping == "air")
-                return Math.Max(20, GetTotalWeight() * 3);
-
-            return 0;
+            return _shipping.GetCost(this);
         }
 
         public DateTime GetShippingDate()
         {
-            return DateTime.Now.AddDays(1);
+            return _shipping.GetDate(this);
         }
     }
 }
