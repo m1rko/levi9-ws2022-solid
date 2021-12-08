@@ -10,10 +10,5 @@
         {
 
         }
-
-        public virtual void Save()
-        {
-
-        }
     }
 }
