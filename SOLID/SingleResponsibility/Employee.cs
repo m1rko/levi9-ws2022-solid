@@ -1,14 +1,17 @@
-﻿public class Employee
+﻿namespace SOLID.SingleResponsibility
 {
-    private string _name;
-
-    public string GetName()
+    public class Employee
     {
-        return _name;
-    }
+        private string _name = "John Doe";
 
-    public void PrintTimeSheetReport()
-    {
-        Console.WriteLine("Printing a time sheet report...");
+        public string GetName()
+        {
+            return _name;
+        }
+
+        public void PrintTimeSheetReport()
+        {
+            Console.WriteLine($"Printing a time sheet report for {_name}...");
+        }
     }
 }

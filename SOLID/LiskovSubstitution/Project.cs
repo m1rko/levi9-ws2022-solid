@@ -2,7 +2,12 @@
 {
     public class Project
     {
-        private IEnumerable<Document> _documents = new List<Document>();
+        private IEnumerable<Document> _documents;
+
+        public Project(IEnumerable<Document> documents)
+        {
+            _documents = documents;
+        }
 
         public void OpenAll()
         {
