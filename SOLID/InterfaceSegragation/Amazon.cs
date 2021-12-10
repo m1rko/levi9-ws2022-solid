@@ -4,12 +4,13 @@
     {
         public void StoreFile(string name)
         {
-            //...
+            Console.WriteLine("The file is stored successfully.");
         }
 
-        public void GetFile(string name)
+        public File GetFile(string name)
         {
-            //...
+            Console.WriteLine($"Downloading { name } started ...");
+            return new File { Name = name };
         }
 
         public void CreateServer(string region)

@@ -5,27 +5,28 @@
 
         public void StoreFile(string name)
         {
-            //...
+            Console.WriteLine("The file is stored successfully.");
         }
 
-        public void GetFile(string name)
+        public File GetFile(string name)
         {
-            //...
+            Console.WriteLine($"Downloading { name } started ...");
+            return new File { Name = name };
         }
 
-        //public void CreateServer(string region)
-        //{
-        //    //...
-        //}
+        public void CreateServer(string region)
+        {
+            throw new NotImplementedException();
+        }
 
-        //public IEnumerable<Servers> ListServers(string region)
-        //{
-        //    return new List<Servers>();
-        //}
+        public IEnumerable<Servers> ListServers(string region)
+        {
+            throw new NotImplementedException();
+        }
 
-        //public string GetCdnAddress()
-        //{
-        //    return string.Empty;
-        //}
+        public string GetCdnAddress()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

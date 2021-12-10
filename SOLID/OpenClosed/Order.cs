@@ -2,8 +2,13 @@
 {
     public class Order
     {
-        private string _shipping;
+        private string _shipping = "ground";
         private IEnumerable<Item> _lineItems;
+
+        public Order(IEnumerable<Item> lineItems)
+        {
+            _lineItems = lineItems;
+        }
 
         public decimal GetTotal()
         {
@@ -33,7 +38,7 @@
             if (_shipping == "air")
                 return Math.Max(20, GetTotalWeight() * 3);
 
-            return 0;
+            throw new Exception("Proper shipping method must be set");
         }
 
         public DateTime GetShippingDate()
