@@ -1,6 +1,6 @@
 ﻿namespace SOLID.InterfaceSegragation
 {
-    public class File
+    public class CloudFile
     {
         public string Name { get; set; }
     }

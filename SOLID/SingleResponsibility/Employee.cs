@@ -11,7 +11,7 @@
 
         public void PrintTimeSheetReport()
         {
-            Console.WriteLine($"Printing a time sheet report for {_name}...");
+            Console.WriteLine($"A time sheet report for { _name } is sent to a printer.");
         }
     }
 }
