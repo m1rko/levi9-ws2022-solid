@@ -4,7 +4,7 @@
     {
         public void Save()
         {
-
+            Console.WriteLine($"Document { FileName } is saved.");
         }
     }
 }

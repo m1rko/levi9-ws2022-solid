@@ -2,6 +2,8 @@
 {
     internal class Air : IShipping
     {
+        public string Type => "air";
+
         public decimal GetCost(Order order)
         {
             return Math.Max(20, order.GetTotalWeight() * 3);

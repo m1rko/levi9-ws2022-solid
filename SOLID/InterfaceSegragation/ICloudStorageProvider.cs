@@ -2,7 +2,7 @@
 {
     public interface ICloudStorageProvider
     {
-        public void StoreFile(string name);
-        public void GetFile(string name);
+        public void StoreFile(CloudFile file);
+        public CloudFile GetFile(string name);
     }
 }

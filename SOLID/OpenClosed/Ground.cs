@@ -1,7 +1,9 @@
 ﻿namespace SOLID.OpenClosed
 {
-    internal class Ground : IShipping
+    public class Ground : IShipping
     {
+        public string Type => "ground";
+
         public decimal GetCost(Order order)
         {
             if (order.GetTotal() > 100)

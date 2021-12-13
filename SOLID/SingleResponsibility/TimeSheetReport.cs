@@ -4,7 +4,7 @@
     {
         public void Print(Employee employee)
         {
-            Console.WriteLine("Printing a time sheet report...");
+            Console.WriteLine($"A time sheet report for { employee.GetName() } is sent to a printer.");
         }
     }
 }
