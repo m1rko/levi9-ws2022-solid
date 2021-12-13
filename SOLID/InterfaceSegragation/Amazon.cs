@@ -25,8 +25,8 @@
         {
             return new List<Server>
             {
-                new Server { Name = "AmazonEu1", Region = "Europe" },
-                new Server { Name = "AmazonEu2", Region = "Europe" }
+                new Server { Name = "AmazonServer1", Region = region },
+                new Server { Name = "AmazonServer2", Region = region }
             };
         }
 

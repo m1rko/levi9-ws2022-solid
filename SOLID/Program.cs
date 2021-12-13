@@ -15,7 +15,7 @@
 //var shippingMethod = new Ground();
 //order.SetShippingType(shippingMethod);
 
-//Console.WriteLine($"The weight by { shippingMethod.Type } is: { order.GetTotal() } || Total price is: { order.GetTotal() }");
+//Console.WriteLine($"The weight by { shippingMethod.Type } is: { order.GetTotalWeight() } || Total price is: { order.GetTotal() }");
 
 
 //// Liskov Substitution Principle
