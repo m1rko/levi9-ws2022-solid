@@ -2,18 +2,22 @@
 {
     public class Order
     {
-        private IShipping _shipping;
+        private IShipping _shipping = new Ground();
+        private IEnumerable<Item> _lineItems;
 
-        public IEnumerable<Item> LineItems { get; set; }
+        public Order(IEnumerable<Item> lineItems)
+        {
+            _lineItems = lineItems;
+        }
 
         public decimal GetTotal()
         {
-            return LineItems.Sum(i => i.Price);
+            return _lineItems.Sum(i => i.Price);
         }
 
         public decimal GetTotalWeight()
         {
-            return LineItems.Sum(i => i.Weight);
+            return _lineItems.Sum(i => i.Weight);
         }
 
         public void SetShippingType(IShipping st)

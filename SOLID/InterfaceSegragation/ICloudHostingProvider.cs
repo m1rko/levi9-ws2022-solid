@@ -3,6 +3,6 @@
     public interface ICloudHostingProvider
     {
         public void CreateServer(string region);
-        public IEnumerable<Servers> ListServers(string region);
+        public IEnumerable<Server> ListServers(string region);
     }
 }

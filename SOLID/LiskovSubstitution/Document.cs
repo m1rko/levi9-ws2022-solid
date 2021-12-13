@@ -8,7 +8,9 @@
 
         public void Open()
         {
-
+            Console.WriteLine($"Openning { FileName } ...");
+            Thread.Sleep(1000);
+            Console.WriteLine($"{ FileName } is open.");
         }
     }
 }
