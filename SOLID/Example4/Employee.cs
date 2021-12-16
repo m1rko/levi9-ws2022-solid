@@ -1,4 +1,4 @@
-﻿namespace SOLID.SingleResponsibility
+﻿namespace SOLID.Example4
 {
     public class Employee
     {

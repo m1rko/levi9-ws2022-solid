@@ -1,4 +1,4 @@
-﻿namespace SOLID.DependencyInversion
+﻿namespace SOLID.Example5
 {
     public class MySqlDatabase
     {
