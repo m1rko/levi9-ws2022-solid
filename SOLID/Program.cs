@@ -1,7 +1,18 @@
-﻿//// Example4
+﻿//// Example1
 
-//var employee = new Employee();
-//employee.PrintTimeSheetReport();
+//var documents = new List<Document> {
+//    new ReadOnlyDocument { Data = new Data(), FileName = "BusinessPlan.docx" },
+//    new Document { Data = new Data(), FileName = "ProjectStructure.docx" },
+//    new Document { Data = new Data(), FileName = "Notes.txt" }
+//};
+
+//var project = new Project(documents);
+
+//project.OpenAll();
+//Console.WriteLine("Working on the project...");
+//Thread.Sleep(2000);
+//project.SaveAll();
+
 
 
 //// Example2
@@ -18,21 +29,6 @@
 //Console.WriteLine($"The weight by { shippingMethod } is: { order.GetTotalWeight() } || Total price is: { order.GetTotal() }");
 
 
-//// Example1
-
-//var documents = new List<Document> {
-//    new ReadOnlyDocument { Data = new Data(), FileName = "BusinessPlan.docx" },
-//    new Document { Data = new Data(), FileName = "ProjectStructure.docx" },
-//    new Document { Data = new Data(), FileName = "Notes.txt" }
-//};
-
-//var project = new Project(documents);
-
-//project.OpenAll();
-//Console.WriteLine("Working on the project...");
-//Thread.Sleep(2000);
-//project.SaveAll();
-
 
 //// Example3
 
@@ -47,6 +43,15 @@
 //amazonService.GetFile(file.Name);
 //Thread.Sleep(2000);
 //Console.WriteLine($"The file { file.Name } is downloaded.");
+
+
+
+//// Example4
+
+//var employee = new Employee();
+//employee.PrintTimeSheetReport();
+
+
 
 //// Example5
 
