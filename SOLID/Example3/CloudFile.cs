@@ -1,4 +1,4 @@
-﻿namespace SOLID.InterfaceSegragation
+﻿namespace SOLID.Example3
 {
     public class CloudFile
     {

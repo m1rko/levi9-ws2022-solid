@@ -1,10 +1,10 @@
-﻿//// Single Responsibility Principle
+﻿//// Example4
 
 //var employee = new Employee();
 //employee.PrintTimeSheetReport();
 
 
-//// Open/Closed Principle
+//// Example2
 
 //var lineItems = new List<Item> {
 //    new Item { Price = 10, Weight = 0.6m },
@@ -18,7 +18,7 @@
 //Console.WriteLine($"The weight by { shippingMethod } is: { order.GetTotalWeight() } || Total price is: { order.GetTotal() }");
 
 
-//// Liskov Substitution Principle
+//// Example1
 
 //var documents = new List<Document> {
 //    new ReadOnlyDocument { Data = new Data(), FileName = "BusinessPlan.docx" },
@@ -34,7 +34,7 @@
 //project.SaveAll();
 
 
-//// Interface Segregation Principle
+//// Example3
 
 //var amazonService = new Amazon();
 //var file = new CloudFile() { Name = "Notes.txt" };
@@ -48,7 +48,7 @@
 //Thread.Sleep(2000);
 //Console.WriteLine($"The file { file.Name } is downloaded.");
 
-//// Dependency Inversion Principle
+//// Example5
 
 //var budgetReport = new BudgetReport();
 //budgetReport.Save();

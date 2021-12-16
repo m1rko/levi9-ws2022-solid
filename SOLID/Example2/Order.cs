@@ -1,4 +1,4 @@
-﻿namespace SOLID.OpenClosed
+﻿namespace SOLID.Example2
 {
     public class Order
     {

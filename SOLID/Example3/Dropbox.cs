@@ -1,7 +1,8 @@
-﻿namespace SOLID.InterfaceSegragation
+﻿namespace SOLID.Example3
 {
-    public class Amazon : ICloudProvider
+    public class Dropbox : ICloudProvider
     {
+
         public void StoreFile(CloudFile file)
         {
             Console.WriteLine($"Uploading { file.Name } ...");
@@ -17,22 +18,17 @@
 
         public void CreateServer(string region)
         {
-            Thread.Sleep(1000);
-            Console.WriteLine($"New server is created for { region }.");
+            throw new NotImplementedException();
         }
 
         public IEnumerable<Server> ListServers(string region)
         {
-            return new List<Server>
-            {
-                new Server { Name = "AmazonServer1", Region = region },
-                new Server { Name = "AmazonServer2", Region = region }
-            };
+            throw new NotImplementedException();
         }
 
         public string GetCdnAddress()
         {
-            return "\\\\cdn.aws.com\\";
+            throw new NotImplementedException();
         }
     }
 }
