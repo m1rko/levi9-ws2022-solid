@@ -40,6 +40,16 @@ calendar.ListAllStartEndTime();
 
 
 
+// InterfaceSegregation
+
+var googleSearch = new GoogleSearch("Text to search");
+var financialResults = googleSearch.FinancialResults();
+
+
+
+
+
+
 
 
 // Common
