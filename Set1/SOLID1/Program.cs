@@ -47,6 +47,10 @@ var financialResults = googleSearch.FinancialResults();
 
 
 
+// DependencyInversion
+
+var textEditor = new TextEditor { File = new WindowsFileService() };
+textEditor.OpenFile();
 
 
 
