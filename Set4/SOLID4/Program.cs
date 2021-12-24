@@ -16,3 +16,14 @@ var navigation = new Navigation
 
 navigation.SetNavigationType("noTolls");
 navigation.GetDistance();
+
+
+// LilskovSubstitution
+
+var picture = new Picture();
+var textEditor = new TextEditor();
+
+textEditor.Elements.Add(new Picture());
+textEditor.Elements.Add(new Text());
+
+textEditor.RotateAll();
