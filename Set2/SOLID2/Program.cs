@@ -9,3 +9,11 @@ var order = new Order
 };
 
 order.PrintFiscalBill();
+
+
+
+// OpenClosed
+
+var document = new WordDocument();
+document.Open();
+document.InsertObject("text");
