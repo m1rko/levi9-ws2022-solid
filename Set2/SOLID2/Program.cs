@@ -17,3 +17,14 @@ order.PrintFiscalBill();
 var document = new WordDocument();
 document.Open();
 document.InsertObject("text");
+
+
+
+// LiskovSubstitution
+
+var developer = new Developer();
+developer.Name = "John Doe";
+
+
+var psaSoftware = new PsaSoftware(developer);
+psaSoftware.ApproveAllTimeSheets();
