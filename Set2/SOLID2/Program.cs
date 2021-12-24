@@ -28,3 +28,10 @@ developer.Name = "John Doe";
 
 var psaSoftware = new PsaSoftware(developer);
 psaSoftware.ApproveAllTimeSheets();
+
+
+
+// InterfaceSegregation
+
+var calEvent = new Event();
+calEvent.SetTitle();

@@ -27,3 +27,12 @@ textEditor.Elements.Add(new Picture());
 textEditor.Elements.Add(new Text());
 
 textEditor.RotateAll();
+
+
+
+// InterfaceSegregation
+
+var email = new EmailService();
+email.InsertText();
+email.InsertPicture();
+email.Send();

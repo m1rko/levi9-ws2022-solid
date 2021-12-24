@@ -21,3 +21,10 @@ var room402 = new Room { Number = 402 };
 var room401 = new Room { Number = 401 };
 var office = new Office { Rooms = new List<Room> { room402, room401 } };
 office.GetScheduledMeetings();
+
+
+
+// InterfaceSegregation
+
+var email = new Gmail();
+email.SendAll();

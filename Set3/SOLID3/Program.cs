@@ -20,3 +20,11 @@ calendar.GetEntryDate("Company updates meeting");
 var cameraApp = new CameraApp();
 cameraApp.TakePhoto(new Camera(), true);
 cameraApp.TakePhoto(new FrontCamera());
+
+
+
+// InterfaceSegregation
+
+var text = new Text();
+text.Insert();
+text.Rotate();
