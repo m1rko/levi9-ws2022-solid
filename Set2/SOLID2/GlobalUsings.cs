@@ -4,5 +4,5 @@ global using System.Globalization;
 global using SOLID2.SingleResponsibility;
 global using SOLID2.OpenClosed;
 global using SOLID2.LiskovSubstitution;
-//global using SOLID2.InterfaceSegragation;
+global using SOLID2.InterfaceSegregation;
 //global using SOLID2.DependencyInversion;
