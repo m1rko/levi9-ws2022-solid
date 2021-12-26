@@ -36,3 +36,11 @@ var email = new EmailService();
 email.InsertText();
 email.InsertPicture();
 email.Send();
+
+
+
+// DependencyInversion
+
+var dropbox = new Dropbox();
+var file = "File to transfer";
+dropbox.StoreFile(file);
