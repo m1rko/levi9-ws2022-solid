@@ -5,4 +5,4 @@ global using SOLID4.SingleResponsibility;
 global using SOLID4.OpenClosed;
 global using SOLID4.LiskovSubstitution;
 global using SOLID4.InterfaceSegregation;
-//global using SOLID4.DependencyInversion;
+global using SOLID4.DependencyInversion;

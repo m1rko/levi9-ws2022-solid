@@ -28,3 +28,12 @@ office.GetScheduledMeetings();
 
 var email = new Gmail();
 email.SendAll();
+
+
+
+// DependencyInversion
+
+var lan = new LAN();
+var file = "File to transfer";
+
+lan.TransferFile(file);

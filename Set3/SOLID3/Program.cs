@@ -28,3 +28,11 @@ cameraApp.TakePhoto(new FrontCamera());
 var text = new Text();
 text.Insert();
 text.Rotate();
+
+
+
+// DependencyInversion
+
+var gmailInstance = new Gmail();
+gmailInstance.EncryptConnection();
+gmailInstance.Send();

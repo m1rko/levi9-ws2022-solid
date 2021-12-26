@@ -35,3 +35,12 @@ psaSoftware.ApproveAllTimeSheets();
 
 var calEvent = new Event();
 calEvent.SetTitle();
+
+
+// DependencyInversion
+
+var phone = new SamsungPhone();
+var file = "File to transfer";
+phone.OpenConnection();
+phone.TransferFiles(file);
+phone.CloseConnection();
